@@ -4,6 +4,10 @@ Portfólio pessoal desenvolvido em React, apresentando meus projetos, experiênc
 
 ---
 
+## LINK VERCEL: https://cherry-client-b8f.notion.site/CP3-Portf-lio-8bc1b15e60de4f4fb756614c1be9ed14?pvs=74
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 - **React** - Biblioteca JavaScript para construção de interfaces
