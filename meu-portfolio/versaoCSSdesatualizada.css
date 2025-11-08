@@ -1,0 +1,320 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1e1e;
+  color: #fefefe;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Code', monospace;
+  color: #fefefe;
+}
+
+.tags,
+.code-style {
+  font-family: 'Fira Code', monospace;
+}
+
+.App {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  width: 100%;
+  margin-left: 65px;
+  padding: 20px;
+}
+
+
+/* NAVBAR */
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D1117;
+  padding: 20px 0;
+  border-right: 1px solid rgba(59, 122, 87, 0.5);
+  z-index: 1000;
+}
+
+.Navbar .title {
+  color: #fefefe;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Navbar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.Navbar ul li {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.Navbar ul li a {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 8px;
+  transition: background-color 0.3s ease;
+}
+
+.Navbar ul li a:hover,
+.Navbar ul li a.active {
+  background-color: #3b7a57;
+  color: #fefefe;
+}
+
+
+/* GERAL PAGINAS */
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+/* SOBRE MIM */
+
+.sobre-container {
+  background-color: #1e1e1e;
+  color: #fefefe;
+  text-align: left;
+  padding: 40px 40px 40px 20px; /* top right bottom left */
+  margin-top: 0;
+}
+
+.titulo-sobre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(59, 122, 87, 0.5);
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.titulo-sobre h1 {
+  font-size: 2rem;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conteudo-sobre {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  margin-left: 10px;
+}
+
+.descricao-sobre,
+.experiencia-sobre {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.descricao-sobre p {
+  font-size: 1rem;
+  color: #d0d0d0;
+  margin-bottom: 16px;
+}
+
+.descricao-sobre h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Fira Code', monospace;
+  color: rgba(254, 254, 254, 0.7);;
+  margin-bottom: 40px;
+}
+
+.skills-sobre ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+  font-family: 'Fira Code', monospace;
+  color: #3b7a57;
+}
+
+.skills-sobre li {
+  background-color: rgba(59, 122, 87, 0.1);
+  border: 1px solid rgba(59, 122, 87, 0.3);
+  border-radius: 6px;
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 4px;
+  font-size: 0.85rem;
+}
+
+.experiencia-sobre {
+  position: relative;
+  padding-left: 30px;
+}
+
+.experiencia-sobre::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(59, 122, 87, 0.5);
+}
+
+.experiencia-sobre > div {
+  margin-bottom: 30px;
+}
+
+.experiencia-sobre h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Fira Code', monospace;
+  color: #3b7a57;
+  margin-bottom: 16px;
+}
+
+.experiencia-sobre h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.experiencia-sobre h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.experiencia-sobre h5 span {
+  font-size: 0.85rem;
+  color: #3b7a57;
+  background-color: rgba(59, 122, 87, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.experiencia-sobre p {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* outras paginas */
+
+.intro-container {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.projetos-container {
+  background-color: #0D1117;
+}
+
+.contato-container {
+  background-color: #241F1F;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 992px) {
+  .conteudo-sobre {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .sobre-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    width: 60px;
+  }
+
+  .App {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    bottom: 0;
+    top: auto;
+    padding: 0 10px;
+  }
+
+  .Navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Navbar ul li {
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+
+  .App {
+    margin-left: 0;
+    margin-bottom: 60px;
+    padding: 10px;
+  }
+
+  .titulo-sobre h1 {
+    font-size: 1.5rem;
+  }
+}
