@@ -12,7 +12,7 @@ export const Projetos = () => {
       tags: ['React', 'Node.js', 'CSS'],
       stars: 8,
       data: 'Out/2024',
-      demo: '#'
+      demo: 'https://github.com/bresantos/Vinheria-Agnello'
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export const Projetos = () => {
       tags: ['React', 'Tailwind', 'API REST'],
       stars: 12,
       data: 'Jul/2024',
-      demo: '#'
+      demo: 'https://github.com/bresantos/gs_bueiro-inteligente'
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export const Projetos = () => {
       tags: ['Next.js', 'MongoDB'],
       stars: 9,
       data: 'Set/2024',
-      demo: '#'
+      demo: 'href="https://github.com/bresantos/challenge-passa-a-bola'
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ export const Projetos = () => {
       tags: ['React', 'Express', 'Node.js'],
       stars: 5,
       data: 'Em desenvolvimento',
-      demo: '#'
+      demo: 'IN DEVELOPMENT'
     }
   ];
 
